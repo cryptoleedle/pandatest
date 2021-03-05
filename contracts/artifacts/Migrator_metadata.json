@@ -1,0 +1,169 @@
+{
+	"compiler": {
+		"version": "0.6.12+commit.27d51765"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_chef",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_oldFactory",
+						"type": "address"
+					},
+					{
+						"internalType": "contract IUniswapV2Factory",
+						"name": "_factory",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_notBeforeBlock",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "chef",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "desiredLiquidity",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "factory",
+				"outputs": [
+					{
+						"internalType": "contract IUniswapV2Factory",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "contract IUniswapV2Pair",
+						"name": "orig",
+						"type": "address"
+					}
+				],
+				"name": "migrate",
+				"outputs": [
+					{
+						"internalType": "contract IUniswapV2Pair",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "notBeforeBlock",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "oldFactory",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"localhost/contracts/Migrator.sol": "Migrator"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"localhost/contracts/Migrator.sol": {
+			"keccak256": "0xf433eb50447f4116f5f7d68430919a3138cca22d5fd842496f09fd7400ea7a15",
+			"urls": [
+				"bzz-raw://4f0d585fb7699052bfabdb9bf5d125084c67359926309bc9d5afa0cdb5f860d1",
+				"dweb:/ipfs/QmaGc6oDkuMTRXK3Sqm8R9TKSTeH1tCyWba17CAv3Q7FfU"
+			]
+		},
+		"localhost/contracts/uniswapv2/interfaces/IUniswapV2Factory.sol": {
+			"keccak256": "0x72e2361bc17535b5f65d8f95ab9c4cabcfd1744fcd2f3fe799e6661e3ca0a0ca",
+			"urls": [
+				"bzz-raw://27850e412193af50bcdb02cddbf79ac127512c51f0d6e0b04b01a028e13db99c",
+				"dweb:/ipfs/QmYAbQT76qrhwLiFUJC9K88f39SZAQ2uZpY2i57hrbvDUW"
+			]
+		},
+		"localhost/contracts/uniswapv2/interfaces/IUniswapV2Pair.sol": {
+			"keccak256": "0x95203b071357552345aa2c4b2afd770ce49d671f41fc370e06112a37a4f6709f",
+			"urls": [
+				"bzz-raw://790eb900446171b7e51321e7ca8c14e96fbd89b3adc47c79e635f026ab59882e",
+				"dweb:/ipfs/QmeSWaEyNPeEbDzkiwd8gNiwRfygFTeackeN53H8GwTrEs"
+			]
+		}
+	},
+	"version": 1
+}
