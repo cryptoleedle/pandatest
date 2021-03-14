@@ -35,7 +35,7 @@ module.exports = async function(deployer, _network, addresses) {
   await deployer.deploy(
     MasterChef,
     sushiToken.address,
-    dev,
+    admin,
     web3.utils.toWei('100'),
     1,
     10000
