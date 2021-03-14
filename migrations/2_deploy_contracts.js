@@ -9,8 +9,8 @@ const SushiBar = artifacts.require('SushiBar.sol');
 const SushiMaker = artifacts.require('SushiMaker.sol');
 const Migrator = artifacts.require('Migrator.sol');
 
-module.exports = async function(deployer, _network, addresses) {
-  const [admin, _] = addresses;
+module.exports = async function(deployer, network, accounts) {
+  const admin = accounts[0];
   //const weth = '0x0a180a76e4466bf68a7f86fb029bed3cccfaaac5';
   await deployer.deploy(WETH);
   const weth = await WETH.deployed();
