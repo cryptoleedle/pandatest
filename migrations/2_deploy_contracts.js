@@ -10,8 +10,8 @@ const SushiMaker = artifacts.require('SushiMaker.sol');
 const Migrator = artifacts.require('Migrator.sol');
 
 module.exports = async function(deployer, _network, addresses) {
-  const [admin, _] = addresses;
-  const dev = '0x420Dab420c5Fd0C067C4b8007448F0256abe2006';
+  //const [admin, _] = addresses;
+  const admin = '0x420Dab420c5Fd0C067C4b8007448F0256abe2006';
   const weth = '0x0a180a76e4466bf68a7f86fb029bed3cccfaaac5';
   //await deployer.deploy(WETH);
   //const weth = await WETH.deployed();
@@ -41,7 +41,7 @@ module.exports = async function(deployer, _network, addresses) {
     10000
   );
   const masterChef = await MasterChef.deployed();
-  await masterChef.transferOwnership(dev);
+  await masterChef.transferOwnership(admin);
   await sushiToken.transferOwnership(masterChef.address);
 
   await deployer.deploy(SushiBar, sushiToken.address);
