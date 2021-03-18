@@ -351,7 +351,7 @@
 			"bytecodeHash": "ipfs"
 		},
 		"optimizer": {
-			"enabled": false,
+			"enabled": true,
 			"runs": 200
 		},
 		"remappings": []
@@ -366,11 +366,11 @@
 			]
 		},
 		"localhost/@openzeppelin/contracts/token/ERC20/ERC20.sol": {
-			"keccak256": "0xca0c2396dbeb3503b51abf4248ebf77a1461edad513c01529df51850a012bee3",
+			"keccak256": "0x261dfc65480128748f95c2c5dd0ed06116e5301ff345a6c31cc3fbbb7f8725cd",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://991b44ff44e0496e8554a90f4c0512c28faed45104d40430019f3c67ea67740e",
-				"dweb:/ipfs/Qmc3nRapVbcctELoZS5qe17zLkFB3bETBfwzCTMF1CSuGE"
+				"bzz-raw://cbf7832970ccdea7581508afe17147bc2923a45109bca77dcbd4372b74caab5c",
+				"dweb:/ipfs/QmUkbtEyGvpSY3cKWuEBYVRCDXKCeNXde3gXQ6Sq35Dpto"
 			]
 		},
 		"localhost/@openzeppelin/contracts/token/ERC20/IERC20.sol": {
